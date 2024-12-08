@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>HTML-Animation Project</title>
+<style>
+		body{
+			background-image:url('road.jpg');
+			background-repeat:no-repeat;
+			background-size:100% 100% ;
+			overflow:hidden;
+			position: relative;
+			}
+@keyframes	car1{
+from {right:0%;}
+to	{right:100%;}
+}
+.car{
+margin-left:90%;
+position:absolute;
+Animation:car1 10s linear;
+}
+
+@keyframes	car2{
+from {right:0%;}
+to	{right:100%;}
+}
+.carr{
+margin-left:90%;
+position:absolute;
+Animation:car2 linear;
+animation-duration: 5s;
+animation-delay: -3s;
+animation-iteration-count: 3;
+}
+@keyframes	birds{
+from {right:0%;}
+to	{right:100%;}
+}
+.birds{
+margin-top: -5%;
+float:right;	
+position:absolute;
+margin-left:90%;
+Animation: birds linear;
+animation-duration: 15s;
+animation-iteration-count: 1.5;
+}
+@keyframes sun_ {
+	from{transform:rotate(0deg);right:0%;position:absolute;border-radius:100%}
+	to{transform:rotate(1800deg);right:100%;position:absolute;border-radius:100%}
+}
+.suns{
+	margin-top:-5;
+	float:right;	
+	position:absolute;
+	margin-left:90%;
+	Animation: sun_ linear;
+	animation-duration: 25s;
+	animation-iteration-count:1;
+}
+@keyframes	dog{
+from {left:0%;}
+to	{left:100%;}
+}
+.dogs{
+	margin-top:0;
+	float:left;	
+	position:absolute;
+	margin-right:90%;
+	Animation:dog linear;
+	animation-duration: 25s;
+	animation-iteration-count:2;
+}
+@keyframes	cat{
+from {left:12%;}
+to	{left:100%;}
+}
+.cats{
+	margin-top:0;
+	float:left;	
+	position:absolute;
+	margin-right:90%;
+	Animation:cat linear;
+	animation-duration: 22s;
+	animation-iteration-count:2;
+}
+.cats{
+	margin-top:0;
+	float:left;	
+	position:absolute;
+	margin-right:90%;
+	Animation:cat linear;
+	animation-duration: 22s;
+	animation-iteration-count:2;
+}
+@keyframes	mouse{
+from {left:18%;}
+to	{left:100%;}
+}
+.mouses{
+	margin-top:0;
+	float:left;	
+	position:absolute;
+	margin-right:90%;
+	Animation:mouse linear;
+	animation-duration: 20s;
+	animation-iteration-count:2;
+}
+.cart-top{
+			position:absolute;
+		   margin-top:-130px;
+		   width:300px;
+		   height:110px;
+		   border:10px solid black;
+		}
+		@keyframes rotateWheels{
+		from{transform:rotate(0 deg);}
+		to {transform:rotate(180deg);}
+		}
+		.wheel{
+		width:70px;
+		height:70px;
+		background-image:repeating-conic-gradient(black 2deg,transparent 20deg,black 2deg);
+		border-radius:100%;	
+		display:inline-block;
+		animation:rotateWheels 5s infinite linear;
+		}
+		.cart{
+		margin-top:662px;
+		position:absolute;
+		margin-left:90px;
+		animation:img 10s linear;
+		}
+		.imn{
+		margin-left:85px;
+		margin-top:550px;
+		position:absolute;
+		Animation:img 10s linear;
+		}
+		@keyframes img{
+		from {left:0%;}
+		to	{left:100%;}
+		}
+		
+</style>
+</head>
+<body>
+	<div class="birds">
+		<p><img src="birds.gif"width="200" height="300"></p>
+		</div>
+		<div class="suns">
+			<p><img src="sun_.png"width="50" height="50"></p>
+		</div>
+	<div class="car">
+	<p><img src="car1.gif" style="margin-top :290" width="200" height="300" ></p>
+	</div>
+	<div class="carr">
+	<p><img src="car2.gif" style="margin-top:300" width="200" height="300"></p>
+	</div>
+	<div class="dogs">
+	<p><img src="dog.gif" style="margin-top:300" width="200" height="150"></p>
+	</div>
+	<div class="cats">
+	<p><img src="cat.gif" style="margin-top:320" width="100" height="125"></p>
+	</div>
+	<div class="mouses">
+	<p><img src="mouse.gif" style="margin-top:340" width="90" height="105"></p>
+	</div>
+	<div class="imn">
+	<img  src="boy.gif" width="100px" height="120px">
+	<img  src="boy2.gif" width="100px" height="120px">
+	<img  src="DJ.gif" width="100px" height="120px"></div>
+	<div class="cart">
+	
+			 <div class="cart-top"></div>
+			 
+			 <div class="wheel1 wheel"></div>
+			 <div class="wheel2 wheel"style="margin-left :150px"></div>
+	 </div>
+</body>
+</html>
